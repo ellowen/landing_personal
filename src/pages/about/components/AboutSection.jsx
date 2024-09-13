@@ -1,78 +1,72 @@
-import React from 'react'
+import React from 'react';
+import img from '/images/about/NICOVITTO_12.jpg';
 
 const AboutSection = () => {
     return (
         <>
             {/* About Section */}
-            <section id="about" className="about section">
+            <section className="about section">
                 <div className="container" data-aos="fade-up" data-aos-delay={100}>
                     <div className="row gy-4 justify-content-center">
                         <div className="col-lg-4">
-                            <img src="assets/img/profile-img.jpg" className="img-fluid" alt="" />
+                            <img src={img} className="img-fluid" alt="Profile Image" />
                         </div>
                         <div className="col-lg-8 content">
-                            <h2>UI/UX Designer &amp; Web Developer.</h2>
+                            <h2>DJ/Producer</h2>
                             <p className="fst-italic py-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Nico Vitto nació en la zona norte de Buenos Aires y desde los 10 años descubrió su pasión por la música. A lo largo de su vida, ha explorado una variedad de géneros y se ha sumergido en el estudio de múltiples instrumentos musicales.
+                            </p>
+                            <p className="py-3">
+                                En su búsqueda constante por crear melodías que transmitan equilibrio y organicidad, fundó su propio sello: <strong>Music for Balance</strong>, un nombre que encapsula su identidad artística.
+                            </p>
+                            <p className="py-3">
+                                "Me inspira la capacidad de los sonidos orgánicos y grooveros para llevarnos a un estado de conexión emocional profunda, fusionando lo terrenal con lo espiritual."
                             </p>
                             <div className="row">
                                 <div className="col-lg-6">
                                     <ul>
                                         <li>
                                             <i className="bi bi-chevron-right" />{" "}
-                                            <strong>Birthday:</strong> <span>1 May 1995</span>
+                                            <strong>Nombre:</strong> <span>Nico Vitto</span>
                                         </li>
                                         <li>
                                             <i className="bi bi-chevron-right" />{" "}
-                                            <strong>Website:</strong> <span>www.example.com</span>
+                                            <strong>Sello:</strong> <span>Music for Balance</span>
                                         </li>
+                                        {/* <li>
+                                            <i className="bi bi-chevron-right" /> <strong>Email:</strong>{" "}
+                                            <span>nico@example.com</span>
+                                        </li> */}
                                         <li>
-                                            <i className="bi bi-chevron-right" /> <strong>Phone:</strong>{" "}
-                                            <span>+123 456 7890</span>
-                                        </li>
-                                        <li>
-                                            <i className="bi bi-chevron-right" /> <strong>City:</strong>{" "}
-                                            <span>New York, USA</span>
+                                            <i className="bi bi-chevron-right" /> <strong>Ubicación:</strong>{" "}
+                                            <span>Buenos Aires, Argentina</span>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-6">
                                     <ul>
                                         <li>
-                                            <i className="bi bi-chevron-right" /> <strong>Age:</strong>{" "}
-                                            <span>30</span>
+                                            <i className="bi bi-chevron-right" /> <strong>Edad:</strong>{" "}
+                                            <span>34</span>
                                         </li>
                                         <li>
-                                            <i className="bi bi-chevron-right" /> <strong>Degree:</strong>{" "}
-                                            <span>Master</span>
+                                            <i className="bi bi-chevron-right" /> <strong>Géneros:</strong>{" "}
+                                            <span>House, Organic House, Progressive House</span>
                                         </li>
-                                        <li>
-                                            <i className="bi bi-chevron-right" /> <strong>Email:</strong>{" "}
-                                            <span>email@example.com</span>
-                                        </li>
-                                        <li>
+                                        {/* <li>
                                             <i className="bi bi-chevron-right" />{" "}
-                                            <strong>Freelance:</strong> <span>Available</span>
-                                        </li>
+                                            <strong>Freelance:</strong> <span>Disponible</span>
+                                        </li> */}
                                     </ul>
                                 </div>
                             </div>
-                            <p className="py-3">
-                                Officiis eligendi itaque labore et dolorum mollitia officiis optio
-                                vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
-                                incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime
-                                officiis quidem quia. Sed et consectetur qui quia repellendus itaque
-                                neque.
-                            </p>
                         </div>
                     </div>
                 </div>
             </section>
             {/* /About Section */}
         </>
-
-    )
+    );
 }
 
-export default AboutSection
+export default AboutSection;

@@ -2,12 +2,14 @@ import React, { useEffect } from 'react';
 import { initializeMobileNav } from './helpers/mobileNavHelpers';
 
 export const Navbar = () => {
-  
+
   useEffect(() => {
     const cleanup = initializeMobileNav();
     return cleanup; // Cleanup function when component unmounts
   }, []);
 
+
+  
   return (
     <>
       <header id="header" className="header d-flex align-items-center fixed-top">
@@ -23,7 +25,7 @@ export const Navbar = () => {
                 <a href="#" className="active">Home</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#about" className="active">About</a>
               </li>
               <li>
                 <a href="#resume">Resume</a>

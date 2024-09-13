@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Typed from 'typed.js';
-import img from '/images/hero/hero-bg.jpg';
+// import img from '/images/hero/hero-bg.jpg';
+import img from '/images/hero/portadamfb_limpia.jpg';
 
 export const Hero = () => {
   useEffect(() => {
@@ -25,7 +26,7 @@ export const Hero = () => {
       <section id="hero" className="hero section dark-background">
         <img src={img} alt="" data-aos="fade-in" />
         <div className="container" data-aos="zoom-out" data-aos-delay={100}>
-          <h2>Ellowen</h2>
+          <h2>NICO VITTO</h2>
           <p>
             I'm{" "}
             <span

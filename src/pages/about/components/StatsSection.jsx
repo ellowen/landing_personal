@@ -4,7 +4,7 @@ const StatsSection = () => {
     return (
         <>
             {/* Stats Section */}
-            <section id="stats" className="stats section">
+            <section  className="stats section">
                 <div className="container" data-aos="fade-up" data-aos-delay={100}>
                     <div className="row gy-4">
                         <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">

@@ -4,7 +4,7 @@ const Services = () => {
     return (
         <>
             {/* Page Title */}
-            <div className="page-title" data-aos="fade">
+            <div id="services" className="page-title" data-aos="fade">
                 <div className="heading">
                     <div className="container">
                         <div className="row d-flex justify-content-center text-center">
@@ -32,7 +32,7 @@ const Services = () => {
                 </nav>
             </div>
             {/* End Page Title */}
-            <section id="services" className="services section">
+            <section  className="services section">
                 <div className="container">
                     <div className="row gy-4">
                         <div
