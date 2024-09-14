@@ -6,6 +6,9 @@ import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css"
 import './index.css'
+// import PureCounter from '@srexi/purecounterjs';
+
+// new PureCounter(); // Inicializar Pure Counter
 
 AOS.init({
   // Global settings:

@@ -67,7 +67,7 @@ export const Navbar = () => {
                   onClick={() => handleClick('#resume')} 
                   className={activeSection === '#resume' ? 'active' : ''}
                 >
-                  Resume
+                  Gigs
                 </a>
               </li>
               <li>
@@ -76,7 +76,7 @@ export const Navbar = () => {
                   onClick={() => handleClick('#services')} 
                   className={activeSection === '#services' ? 'active' : ''}
                 >
-                  Services
+                  Labels
                 </a>
               </li>
               <li>

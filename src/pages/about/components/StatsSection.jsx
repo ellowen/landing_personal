@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import PureCounter from '@srexi/purecounterjs';
+
 
 const StatsSection = () => {
+    useEffect(() => {
+        new PureCounter(); // Inicializa Pure Counter cuando el componente se monta
+    }, []); // Solo se ejecuta una vez al montar el componente
     return (
         <>
             {/* Stats Section */}
