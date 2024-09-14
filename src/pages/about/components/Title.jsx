@@ -20,7 +20,7 @@ export const Title = () => {
                         </div>
                     </div>
                 </div>
-                <nav id="about" className="breadcrumbs">
+                <nav className="breadcrumbs">
                     <div className="container">
                         {/* <ol>
                             <li>

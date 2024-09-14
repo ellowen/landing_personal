@@ -15,7 +15,7 @@ function App() {
       <Hero />
       <About />
       <Resume />
-      <Services /> 
+      <Services />
       <Contact />
       <ScrollTop />
       <Footer />

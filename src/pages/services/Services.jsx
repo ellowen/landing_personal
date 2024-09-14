@@ -4,36 +4,29 @@ const Services = () => {
     return (
         <>
             {/* Page Title */}
-            <div id="services" className="page-title" data-aos="fade">
+            <div className="page-title" data-aos="fade">
                 <div className="heading">
                     <div className="container">
                         <div className="row d-flex justify-content-center text-center">
                             <div className="col-lg-8">
                                 <h1>Services</h1>
-                                <p className="mb-0">
+                                {/* <p className="mb-0">
                                     Odio et unde deleniti. Deserunt numquam exercitationem. Officiis
                                     quo odio sint voluptas consequatur ut a odio voluptatem. Sit
                                     dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit
                                     quaerat ipsum dolorem.
-                                </p>
+                                </p> */}
                             </div>
                         </div>
                     </div>
                 </div>
                 <nav className="breadcrumbs">
-                    <div className="container">
-                        <ol>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li className="current">Services</li>
-                        </ol>
-                    </div>
+            
                 </nav>
             </div>
             {/* End Page Title */}
-            <section  className="services section">
-                <div className="container">
+            <section id="services" className="services section">
+                <div className="container" >
                     <div className="row gy-4">
                         <div
                             className="col-lg-4 col-md-6"

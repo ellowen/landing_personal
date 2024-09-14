@@ -38,9 +38,9 @@ const Resume = () => {
     return (
         <>
             {/* Page Title */}
-            <div id='resume'  className="page-title" data-aos="fade">
+            <div  className="page-title" data-aos="fade">
                 <div className="heading">
-                    <div  className="container">
+                    <div className="container">
                         <div className="row d-flex justify-content-center text-center">
                             <div className="col-lg-8">
 
@@ -63,7 +63,7 @@ const Resume = () => {
             </div>
             {/* End Page Title */}
 
-            <section  className="events-section">
+            <section id='resume' className="events-section">
                 <div className="container">
 
                     {/* <div className="events-header">
@@ -81,7 +81,7 @@ const Resume = () => {
                     </div>
                 </div>
             </section>
-            <div style={{ height: '200px' }}></div>
+            {/* <div style={{ height: '200px' }}></div> */}
             {/* /Upcoming Gigs Section */}
         </>
     );

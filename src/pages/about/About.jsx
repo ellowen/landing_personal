@@ -11,7 +11,7 @@ const About = () => {
     return (
         <body className="about-page">
             <main className="main">
-                <Title />
+                {/* <Title /> */}
                 <AboutSection />
                 <StatsSection />
                 <SkillSection />
