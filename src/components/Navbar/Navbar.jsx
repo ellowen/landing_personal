@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { initializeMobileNav } from './helpers/mobileNavHelpers';
+import logo from '/images/Header/MFB Logo.png';
+// import img from '/images/about/NICOVITTO_12.jpg';
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState('#hero'); // Estado para la sección activa
 
   useEffect(() => {
     const cleanup = initializeMobileNav();
-    
+
     // Listener para manejar el scroll y actualizar la sección activa
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
@@ -39,53 +41,54 @@ export const Navbar = () => {
       <header id="header" className="header d-flex align-items-center fixed-top">
         <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
           <a href="#" className="logo d-flex align-items-center">
-            <h1 className="sitename">Personal</h1>
+            <img src={logo} alt="" />
+            {/* <h1 className="sitename">Personal</h1> */}
           </a>
           <nav id="navmenu" className="navmenu">
             <ul>
               <li>
-                <a 
-                  href="#hero" 
-                  onClick={() => handleClick('#hero')} 
+                <a
+                  href="#hero"
+                  onClick={() => handleClick('#hero')}
                   className={activeSection === '#hero' ? 'active' : ''}
                 >
                   Home
                 </a>
               </li>
               <li>
-                <a 
-                  href="#about" 
-                  onClick={() => handleClick('#about')} 
+                <a
+                  href="#about"
+                  onClick={() => handleClick('#about')}
                   className={activeSection === '#about' ? 'active' : ''}
                 >
                   About
                 </a>
               </li>
               <li>
-                <a 
-                  href="#resume" 
-                  onClick={() => handleClick('#resume')} 
+                <a
+                  href="#resume"
+                  onClick={() => handleClick('#resume')}
                   className={activeSection === '#resume' ? 'active' : ''}
                 >
                   Gigs
                 </a>
               </li>
               <li>
-                <a 
-                  href="#services" 
-                  onClick={() => handleClick('#services')} 
+                <a
+                  href="#services"
+                  onClick={() => handleClick('#services')}
                   className={activeSection === '#services' ? 'active' : ''}
                 >
-                  Labels
+                  Sets
                 </a>
               </li>
               <li>
-                <a 
-                  href="#contact" 
-                  onClick={() => handleClick('#contact')} 
+                <a
+                  href="#contact"
+                  onClick={() => handleClick('#contact')}
                   className={activeSection === '#contact' ? 'active' : ''}
                 >
-                  Contact
+                  Booking
                 </a>
               </li>
             </ul>

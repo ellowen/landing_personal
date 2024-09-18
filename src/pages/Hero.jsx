@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import Typed from 'typed.js';
 // import img from '/images/hero/hero-bg.jpg';
-import img from '/images/hero/portadamfb_limpia.jpg';
+import img from '/images/hero/portada_landung_4.jpg';
+import imgSound from '/images/icons/soundcloud-logo (1).png';
 
 export const Hero = () => {
   useEffect(() => {
@@ -26,7 +27,7 @@ export const Hero = () => {
       <section id="hero" className="hero section dark-background">
         <img src={img} alt="" data-aos="fade-in" />
         <div className="container" data-aos="zoom-out" data-aos-delay={100}>
-          <h2>NICO VITTO</h2>
+          <h2>NICOVITTO</h2>
           <p>
             I'm{" "}
             <span
@@ -39,17 +40,20 @@ export const Hero = () => {
           </p>
           <div className="social-links">
             <a href="#">
-              <i className="bi bi-twitter-x" />
-            </a>
-            <a href="#">
-              <i className="bi bi-facebook" />
+              <i className="bi bi-youtube" />
             </a>
             <a href="#">
               <i className="bi bi-instagram" />
             </a>
             <a href="#">
-              <i className="bi bi-linkedin" />
+            <i className="bi bi-cloudy-fill" />
             </a>
+            {/* SoundCloud logo */}
+            {/* <img
+                src={imgSound}
+                alt="SoundCloud"
+                style={{ width: '30px', height: '30px' }} 
+              /> */}
           </div>
         </div>
       </section>

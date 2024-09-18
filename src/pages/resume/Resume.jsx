@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '/images/gigs/image.png';
 
 const Resume = () => {
     const upcomingEvents = [
@@ -34,54 +35,54 @@ const Resume = () => {
         },
     ];
 
-
     return (
         <>
             {/* Page Title */}
-            <div  className="page-title" data-aos="fade">
+            <div className="page-title" data-aos="fade">
                 <div className="heading">
                     <div className="container">
                         <div className="row d-flex justify-content-center text-center">
                             <div className="col-lg-8">
-
-                                <h1 >Upcoming Gigs</h1>
-                                {/* <p className="mb-0">
-                                    Odio et unde deleniti. Deserunt numquam exercitationem. Officiis
-                                    quo odio sint voluptas consequatur ut a odio voluptatem. Sit
-                                    dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit
-                                    quaerat ipsum dolorem.
-                                </p> */}
-
+                                <h1>Next Gigs</h1>
                             </div>
                         </div>
                     </div>
                 </div>
                 <nav className="breadcrumbs">
-                    <div className="container">
-                    </div>
+                    <div className="container"></div>
                 </nav>
             </div>
             {/* End Page Title */}
 
-            <section id='resume' className="events-section">
+            <section id="resume" className="events-section">
                 <div className="container">
-
-                    {/* <div className="events-header">
-                        <h1>Upcoming Events</h1>
-                        <p>Check out our upcoming events and join us for unforgettable experiences.</p>
-                    </div> */}
-                    <div className="events-list">
-                        {upcomingEvents.map((event, index) => (
-                            <div className="event-item" key={index}>
-                                <div className="event-date">{event.date}</div>
-                                <div className="event-title">{event.title}</div>
-                                <div className="event-location">{event.location}</div>
+                    <div className="row">
+                        {/* Columna de los eventos */}
+                        <div className="col-lg-6">
+                            <div className="events-list">
+                                {upcomingEvents.map((event, index) => (
+                                    <div className="event-item mb-4" key={index}>
+                                        <div className="event-date">{event.date}</div>
+                                        <div className="event-title">{event.title}</div>
+                                        <div className="event-location">{event.location}</div>
+                                    </div>
+                                ))}
                             </div>
-                        ))}
+                        </div>
+
+                        {/* Columna de la imagen */}
+                        <div className="col-lg-6">
+                            <div className="image-container text-center">
+                                <img
+                                    src={img}
+                                    alt="Event Poster"
+                                    className="img-fluid"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            {/* <div style={{ height: '200px' }}></div> */}
             {/* /Upcoming Gigs Section */}
         </>
     );

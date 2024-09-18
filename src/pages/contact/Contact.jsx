@@ -9,7 +9,7 @@ const Contact = () => {
                     <div className="container">
                         <div className="row d-flex justify-content-center text-center">
                             <div className="col-lg-8">
-                                <h1>Contact</h1>
+                                <h1>Booking Agency</h1>
                                 {/* <p className="mb-0">
                                     Odio et unde deleniti. Deserunt numquam exercitationem. Officiis
                                     quo odio sint voluptas consequatur ut a odio voluptatem. Sit
@@ -45,7 +45,7 @@ const Contact = () => {
                                 <i className="icon bi bi-geo-alt flex-shrink-0" />
                                 <div>
                                     <h3>Address</h3>
-                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                    <p>Buenos Aires, Argentina</p>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                                 <i className="icon bi bi-envelope flex-shrink-0" />
                                 <div>
                                     <h3>Email Us</h3>
-                                    <p>info@example.com</p>
+                                    <p>info@greatsoundbooking.com</p>
                                 </div>
                             </div>
                         </div>
@@ -88,28 +88,28 @@ const Contact = () => {
                                 <div>
                                     <h3>Social Profiles</h3>
                                     <div className="social-links">
-                                        <a href="#">
+                                        {/* <a href="#">
                                             <i className="bi bi-twitter-x" />
                                         </a>
                                         <a href="#">
                                             <i className="bi bi-facebook" />
-                                        </a>
-                                        <a href="#">
+                                        </a> */}
+                                        <a href="https://www.instagram.com/greatsound.booking?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                                             <i className="bi bi-instagram" />
                                         </a>
-                                        <a href="#">
+                                        {/* <a href="#">
                                             <i className="bi bi-skype" />
                                         </a>
                                         <a href="#">
                                             <i className="bi bi-linkedin" />
-                                        </a>
+                                        </a> */}
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/* End Info Item */}
                     </div>
-                    <form
+                    {/* <form
                         action="forms/contact.php"
                         method="post"
                         className="php-email-form"
@@ -163,7 +163,7 @@ const Contact = () => {
                                 <button type="submit">Send Message</button>
                             </div>
                         </div>
-                    </form>
+                    </form> */}
                     {/* End Contact Form */}
                 </div>
             </section>

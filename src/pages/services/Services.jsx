@@ -9,7 +9,7 @@ const Services = () => {
           <div className="container">
             <div className="row d-flex justify-content-center text-center">
               <div className="col-lg-8">
-                <h1>Labels</h1>
+                <h1>Lasted Sets</h1>
               </div>
             </div>
           </div>
@@ -17,7 +17,7 @@ const Services = () => {
         <nav className="breadcrumbs"></nav>
       </div>
       {/* End Page Title */}
-      
+
       <section id="services" className="services section">
         <div className="container">
           <div className="row gy-4">
@@ -31,8 +31,8 @@ const Services = () => {
                 <div className="video-wrapper">
                   <iframe
                     width="100%"
-                    height="200"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    height="300"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1799433580&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                     title="YouTube video"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -42,7 +42,7 @@ const Services = () => {
               </div>
             </div>
             {/* End Service Item */}
-            
+
             <div
               className="col-lg-4 col-md-6"
               data-aos="fade-up"
@@ -53,8 +53,9 @@ const Services = () => {
                 <div className="video-wrapper">
                   <iframe
                     width="100%"
-                    height="200"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                    height="300"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1826372976&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                    // src="https://www.youtube.com/embed/tgbNymZ7vqY"
                     title="YouTube video"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -74,9 +75,10 @@ const Services = () => {
                 {/* Embedding a Vimeo video */}
                 <div className="video-wrapper">
                   <iframe
-                    src="https://player.vimeo.com/video/76979871"
+                    // src="https://player.vimeo.com/video/76979871"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1826350071&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                     width="100%"
-                    height="200"
+                    height="300"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen

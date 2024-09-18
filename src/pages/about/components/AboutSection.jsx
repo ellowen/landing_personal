@@ -6,21 +6,21 @@ const AboutSection = () => {
         <>
             {/* Page Title */}
             <div  className="page-title" data-aos="fade">
-                <div className="heading">
+                {/* <div className="heading">
                     <div className="container">
                         <div className="row d-flex justify-content-center text-center">
                             <div className="col-lg-8">
                                 <h1 >About Me</h1>
                                 <p className="mb-0">
-                                    {/* Odio et unde deleniti. Deserunt numquam exercitationem. Officiis
+                                    Odio et unde deleniti. Deserunt numquam exercitationem. Officiis
                                     quo odio sint voluptas consequatur ut a odio voluptatem. Sit
                                     dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit
-                                    quaerat ipsum dolorem. */}
+                                    quaerat ipsum dolorem.
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <nav   className="breadcrumbs">
                     <div className="container">
                         {/* <ol>
@@ -39,7 +39,7 @@ const AboutSection = () => {
                 <div className="container" data-aos="fade-up" data-aos-delay={100}>
                     <div className="row gy-4 justify-content-center">
                         <div className="col-lg-4">
-                            <img src={img} className="img-fluid" alt="Profile Image" />
+                            <img src={img} className="img-fluid" alt="Profile Image" style={{ height: "80%" }}/>
                         </div>
                         <div className="col-lg-8 content">
                             <h2>DJ/Producer</h2>
