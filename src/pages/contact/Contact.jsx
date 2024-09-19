@@ -1,5 +1,5 @@
 import React from 'react'
-
+import logo from '/images/booking/Great_Sound_Blanco.png'
 const Contact = () => {
     return (
         <>
@@ -8,18 +8,37 @@ const Contact = () => {
                 <div className="heading">
                     <div className="container">
                         <div className="row d-flex justify-content-center text-center">
-                            <div className="col-lg-8">
-                                <h1>Booking Agency</h1>
-                                {/* <p className="mb-0">
-                                    Odio et unde deleniti. Deserunt numquam exercitationem. Officiis
-                                    quo odio sint voluptas consequatur ut a odio voluptatem. Sit
-                                    dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit
-                                    quaerat ipsum dolorem.
-                                </p> */}
+                            <div className="col-lg-8 d-flex align-items-center justify-content-center">
+                                {/* Dividimos el título en dos partes */}
+                                <h1 className="d-flex align-items-center">
+                                    <span className="me-2">Booking</span>
+                                    <img
+                                        src={logo}
+                                        alt="Booking Agency Logo"
+                                        style={{ width: '150px', height: '65px', margin: '0 10px' }}
+                                    />
+                                    <span className="ms-2">Agency</span>
+                                </h1>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                {/* <div className="heading">
+                    <div className="container">
+                        <div className="row d-flex justify-content-center text-center">
+                            <div className="col-lg-8">
+                                <h1>Booking Agency</h1>
+                                <p className="mb-0">
+                                    Odio et unde deleniti. Deserunt numquam exercitationem. Officiis
+                                    quo odio sint voluptas consequatur ut a odio voluptatem. Sit
+                                    dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit
+                                    quaerat ipsum dolorem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
                 <nav className="breadcrumbs">
                     {/* <div className="container">
                         <ol>

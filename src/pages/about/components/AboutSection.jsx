@@ -39,7 +39,7 @@ const AboutSection = () => {
                 <div className="container" data-aos="fade-up" data-aos-delay={100}>
                     <div className="row gy-4 justify-content-center">
                         <div className="col-lg-4">
-                            <img src={img} className="img-fluid" alt="Profile Image" style={{ height: "80%" }}/>
+                            <img src={img} className="img-fluid" alt="Profile Image" /* style={{ height: "80%" }} *//>
                         </div>
                         <div className="col-lg-8 content">
                             <h2>DJ/Producer</h2>

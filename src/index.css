@@ -857,6 +857,22 @@ section,
   line-height: 0;
 }
 
+/* Estilo general para imágenes */
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  img.img-fluid {
+    width: 100%;
+    height: auto; /* Asegura que la altura se ajuste correctamente */
+    object-fit: contain; /* Evita que la imagen se recorte en pantallas pequeñas */
+  }
+}
+
 /*--------------------------------------------------------------
   # Stats Section
   --------------------------------------------------------------*/

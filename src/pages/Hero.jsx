@@ -32,7 +32,7 @@ export const Hero = () => {
             I'm{" "}
             <span
               className="typed"
-              data-typed-items="DJ, Producer"
+              data-typed-items="DJ, Producer, Artist"
             >
               {/* Producer */}
             </span>

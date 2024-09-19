@@ -9,7 +9,7 @@ export const Navbar = () => {
   const menus = [
     { id: '#hero', name: 'Home' },
     { id: '#about', name: 'About' },
-    { id: '#portfolio', name: 'Portfolio' },
+    { id: '#portfolio', name: 'Gallery' },
     { id: '#services', name: 'Sets' },
     { id: '#resume', name: 'Gigs' },
     { id: '#contact', name: 'Booking' },
