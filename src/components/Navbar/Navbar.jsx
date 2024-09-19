@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { initializeMobileNav } from './helpers/mobileNavHelpers';
 import logo from '/images/Header/MFB Logo.png';
-// import img from '/images/about/NICOVITTO_12.jpg';
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState('#hero'); // Estado para la sección activa
+
+  // Definir los menús
+  const menus = [
+    { id: '#hero', name: 'Home' },
+    { id: '#about', name: 'About' },
+    { id: '#portfolio', name: 'Portfolio' },
+    { id: '#services', name: 'Sets' },
+    { id: '#resume', name: 'Gigs' },
+    { id: '#contact', name: 'Booking' },
+  ];
 
   useEffect(() => {
     const cleanup = initializeMobileNav();
@@ -12,7 +21,7 @@ export const Navbar = () => {
     // Listener para manejar el scroll y actualizar la sección activa
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
-      let currentSection = '#hero'; // Default section
+      let currentSection = '#hero'; // Sección por defecto
 
       sections.forEach(section => {
         const sectionTop = section.offsetTop - 500; // Ajuste para la altura del header
@@ -41,56 +50,22 @@ export const Navbar = () => {
       <header id="header" className="header d-flex align-items-center fixed-top">
         <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
           <a href="#" className="logo d-flex align-items-center">
-            <img src={logo} alt="" />
-            {/* <h1 className="sitename">Personal</h1> */}
+            <img src={logo} alt="Logo" />
           </a>
           <nav id="navmenu" className="navmenu">
             <ul>
-              <li>
-                <a
-                  href="#hero"
-                  onClick={() => handleClick('#hero')}
-                  className={activeSection === '#hero' ? 'active' : ''}
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  onClick={() => handleClick('#about')}
-                  className={activeSection === '#about' ? 'active' : ''}
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#resume"
-                  onClick={() => handleClick('#resume')}
-                  className={activeSection === '#resume' ? 'active' : ''}
-                >
-                  Gigs
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#services"
-                  onClick={() => handleClick('#services')}
-                  className={activeSection === '#services' ? 'active' : ''}
-                >
-                  Sets
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  onClick={() => handleClick('#contact')}
-                  className={activeSection === '#contact' ? 'active' : ''}
-                >
-                  Booking
-                </a>
-              </li>
+              {/* Usamos map para renderizar los menús dinámicamente */}
+              {menus.map((menu) => (
+                <li key={menu.id}>
+                  <a
+                    href={menu.id}
+                    onClick={() => handleClick(menu.id)}
+                    className={activeSection === menu.id ? 'active' : ''}
+                  >
+                    {menu.name}
+                  </a>
+                </li>
+              ))}
             </ul>
             <i className="mobile-nav-toggle d-xl-none bi bi-list" />
           </nav>

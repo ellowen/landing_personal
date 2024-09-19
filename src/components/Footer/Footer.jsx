@@ -29,7 +29,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="copyright">
                         <span>Copyright</span>{" "}
-                        <strong className="px-1 sitename">Personal</strong>{" "}
+                        <strong className="px-1 sitename">Ellowen</strong>{" "}
                         <span>All Rights Reserved</span>
                     </div>
                     <div className="credits">
@@ -37,7 +37,7 @@ const Footer = () => {
                         {/* You can delete the links only if you've purchased the pro version. */}
                         {/* Licensing information: https://bootstrapmade.com/license/ */}
                         {/* Purchase the pro version with working PHP/AJAX contact form: [buy-url] */}
-                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                        Designed by <a href="https://bootstrapmade.com/">MusicForBalance</a>
                     </div>
                 </div>
             </div>
