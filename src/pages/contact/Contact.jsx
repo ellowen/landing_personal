@@ -11,13 +11,13 @@ const Contact = () => {
                             <div className="col-lg-8 d-flex align-items-center justify-content-center">
                                 {/* Dividimos el título en dos partes */}
                                 <h1 className="d-flex align-items-center">
-                                    <span className="me-2">Booking</span>
                                     <img
                                         src={logo}
                                         alt="Booking Agency Logo"
                                         style={{ width: '150px', height: '65px', margin: '0 10px' }}
                                     />
-                                    <span className="ms-2">Agency</span>
+                                    <span className="me-5">Booking</span>
+                                    {/* <span className="ms-2">Agency</span> */}
                                 </h1>
                             </div>
                         </div>
