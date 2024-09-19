@@ -2,10 +2,16 @@ import React, { useEffect } from 'react';
 import GLightbox from 'glightbox';
 import 'glightbox/dist/css/glightbox.min.css'; // Importa los estilos de GLightbox
 
+import image1 from '/images/portfolio/10.jpg';
+import image2 from '/images/portfolio/60 (1).jpg';
+import image3 from '/images/portfolio/160.jpeg';
+import image4 from '/images/portfolio/160.jpeg';
+import image5 from '/images/portfolio/130.jpg';
+
 const Portfolio = () => {
 
     useEffect(() => {
-        // Inicializar GLightbox para las imágenes
+
         const lightbox = GLightbox({
             selector: '.glightbox', // Selecciona el atributo para identificar los elementos del lightbox
             touchNavigation: true,
@@ -20,37 +26,31 @@ const Portfolio = () => {
     const portfolioItems = [
         {
             category: 'filter-app',
-            imgSrc: '/images/portfolio/10.jpg',
+            imgSrc: image1,
             title: 'App 1',
             description: 'Lorem ipsum, dolor sit amet consectetur',
         },
         {
             category: 'filter-product',
-            imgSrc: '/images/portfolio/60 (1).jpg',
+            imgSrc: image2,
             title: 'Product 1',
             description: 'Lorem ipsum, dolor sit amet consectetur',
         },
-        // {
-        //     category: 'filter-app',
-        //     imgSrc: '/images/portfolio/120.jpeg',
-        //     title: 'App 1',
-        //     description: 'Lorem ipsum, dolor sit amet consectetur',
-        // },
         {
             category: 'filter-branding',
-            imgSrc: '/images/portfolio/63.jpg',
+            imgSrc: image3,
             title: 'Branding 1',
             description: 'Lorem ipsum, dolor sit amet consectetur',
         },
         {
             category: 'filter-app',
-            imgSrc: '/images/portfolio/160.jpeg',
+            imgSrc: image4,
             title: 'App 1',
             description: 'Lorem ipsum, dolor sit amet consectetur',
         },
         {
             category: 'filter-app',
-            imgSrc: '/images/portfolio/130.jpg',
+            imgSrc: image5,
             title: 'App 1',
             description: 'Lorem ipsum, dolor sit amet consectetur',
         },
